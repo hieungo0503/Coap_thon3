@@ -52,8 +52,8 @@ def client_callback_observe(response):  # pragma: no cover
 def main():  # pragma: no cover
     global client
     op = "POST"
-    path = "coap://115.78.92.253:5683/api/basic"
-    payload = "{temperature:30}"
+    path = "coap://115.78.92.253:12345/basic"
+    payload = "30"
     try:
         opts, args = getopt.getopt(sys.argv[1:], "ho:p:P:f:", ["help", "operation=", "path=", "payload=",
                                                                "payload_file="])

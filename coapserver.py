@@ -37,7 +37,7 @@ def usage():  # pragma: no cover
 def main(argv):  # pragma: no cover
     ip = "192.168.1.226"
     port = 12345
-    multicast = False
+    multicast = True
     try:
         opts, args = getopt.getopt(argv, "hi:p:m", ["ip=", "port=", "multicast"])
     except getopt.GetoptError:

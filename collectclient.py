@@ -76,7 +76,7 @@ def main():  # pragma: no cover
     config = open(config, "r")
     config = json.load(config)
     for n in config["nodes"]:
-        path = "coap://"+n["115.78.92.253"]+":"+str(n["5683"])+"/radio"
+        path = "coap://"+n["ip"]+":"+str(n["port"])+"/radio"
         host, port, path = parse_uri(path)
         try:
             tmp = socket.gethostbyname(host)

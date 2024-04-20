@@ -18,13 +18,13 @@ if __name__ == '__main__':
 
     parser.add_option("-n", "--hostname",
         action="append",
-        dest="host_name",
+        dest="115.78.92.253",
         help="Define COAP host name")
 
     parser.add_option("-p", "--port",
         action="append",
         dest="host_port",
-        default=5683,
+        default=12345,
         help="Define COAP host port (default: 5683)")
 
     parser.add_option("-l", "--loops",
@@ -42,8 +42,8 @@ if __name__ == '__main__':
     (options, args) = parser.parse_args()
 
     # COAP ping parameters setup
-    host = options.host_name[0]
-    port = options.host_port
+    host = "115.78.92.253"
+    port = "12345"
     sleep_sec = options.sleep_sec
     ping_loops = options.ping_loops
 
